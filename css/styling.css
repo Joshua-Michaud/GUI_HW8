@@ -1,0 +1,111 @@
+/*
+Name: Joshua Michaud
+Email: Joshua_Michaud@student.uml.edu
+Affiliation: Student at Umass Lowell Computer Science
+Date: 12/15/2020
+Description: css to style scrabble pieces and images
+Location: github
+91.461 Assignment: Assignment #8
+Joshua Michaud, UMass Lowell Computer Science,
+Copyright (c) 2020 by Joshua Michaud. All rights reserved. May be
+freely copied or excerpted for educational purposes with credit to the author.
+*/
+
+html,body{
+  margin: 0;
+  padding: 0;
+  height: auto;
+  background-color: gray;
+}
+
+.ui-droppable{
+  display: inline block;
+  height: 75px;
+  width: 75px;
+  padding-left: 1px;
+}
+
+#holder{
+  width: 575px;
+  height: auto;
+}
+
+
+#tileHolder{
+  position: absolute;
+}
+
+#handTiles{
+  position: relative;
+  top: 58px;
+  left: 45px;
+}
+
+#rack{
+  position: absolute;
+  min-height: 20%;
+  bottom: 0px;
+  left: 32%;
+}
+
+.helper{
+  display: inline-block;
+  width: auto;
+
+}
+
+.imgHelper{
+  display: inline-block;
+  height: 60px;
+  width: 70px;
+}
+
+.ui-draggable{
+  position: relative;
+  width: 65px;
+  height: 65px;
+  right:18%;
+}
+
+#tileDrops{
+  position: relative;
+  width: 1000px;
+  height: 75px;
+  top:300px;
+  left:34%;
+}
+
+/*https://www.elated.com/drag-and-drop-with-jquery-your-essential-guide/*/
+/* Used above code to create a shadow underneath the tile when you pick it up*/
+.ui-draggable-dragging {
+  -moz-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  -webkit-box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+  box-shadow: 0 0 .5em rgba(0, 0, 0, .8);
+}
+
+#buttons{
+  display: inline-block;
+  position: relative;
+  top: 575px;
+  left:39%;
+  width: 200px;
+}
+
+#submitWords{
+  background-color: #29BFE5;
+}
+
+#resetButton{
+  background-color: #F50434;
+}
+
+#info{
+  color: white;
+  display: flex;
+  align-content: center;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 500;
+}

@@ -1,0 +1,120 @@
+/*
+Name: Joshua Michaud
+Email: Joshua_Michaud@student.uml.edu
+Affiliation: Student at Umass Lowell Computer Science
+Date: 12/15/2020
+Description: Css to style navbar
+Location: github
+91.461 Assignment: Assignment #8
+Joshua Michaud, UMass Lowell Computer Science,
+Copyright (c) 2020 by Joshua Michaud. All rights reserved. May be
+freely copied or excerpted for educational purposes with credit to the author.
+*/
+
+/* sets whole page background to gray */
+body, html{
+  background-color: gray;
+
+}
+
+footer {
+  position: relative;
+  text-align: left;
+
+  /*padding-bottom: 10px;*/
+  margin-left: 1%;
+  top: 625px;
+}
+
+.navbar-nav a:hover{
+  color: red;
+}
+
+/* This changes my github icon to white and changes it size */
+nav i {
+    font-size: 36px;
+    color: white;
+}
+
+/* Centers the text and makes the text cursive */
+.nav-link{
+  text-align: center;
+  font-family: cursive;
+}
+
+
+/* This makes the dropdown have a gray background and make the writing cursive */
+.dropdown-menu{
+  background-color: gray;
+  font-family: cursive;
+}
+
+/*This makes the font of the error messages from jquery red and changes the font size*/
+.error{
+  color: red;
+  font-size: 18px;
+}
+
+/*Gives the buttons some padding*/
+#buttons{
+  padding-bottom: 15px;
+}
+
+/*gives the jumbotron no background*/
+.jumbotron{
+  background: none;
+}
+
+/* sets jumbotron up */
+#JumboHelper{
+  border-radius: 15px;
+  padding-top: 10px;
+  background-color: #2a758c;
+  width: 100%;
+  margin: auto;
+  min-width: 70%;
+  max-width: 85%;
+}
+
+
+#FormHelper{
+  border-radius: 15px;
+  padding-top: 10px;
+  background-color: #2a758c;
+}
+
+
+#multTable{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+/*gives the outer row and column background color and sets the text to red*/
+tbody > tr > td:first-child,
+tbody > tr:first-child > td {
+  background-color: #0a4456;
+  color: red;
+}
+
+/*sets the inner rows and column color to white*/
+tbody > tr > td {
+  background-color: #292b2c;
+  color: white;
+}
+
+/*https://www.w3schools.com/cssref/pr_pos_overflow.asp*/
+/* Found a nice scroll feature from w3schools */
+.table{
+  overflow: scroll;
+  max-width: 50%;
+  margin: 0 auto;
+  max-height: 400px;
+}
+
+#tabs{
+  margin-top: 15px;
+}
+
+.ui-slider{
+  margin-top: 15px;
+}
